@@ -13,6 +13,23 @@ markup:
     renderer:
       unsafe: true
 
+# Add menu configuration
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          params:
+              icon: home
+        
+        - identifier: about
+          name: About
+          url: /about
+          weight: -90
+          params:
+              icon: user
+
 # Main parameters
 params:
     mainSections:
