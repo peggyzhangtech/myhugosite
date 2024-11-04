@@ -1,38 +1,47 @@
-baseURL: "http://localhost:1313/"  # For local development
+baseURL: "http://localhost:1313/"
 languageCode: en-us
-title: Peggy's playground
+title: Peggy's hugo website
 theme: hugo-theme-stack
 
-# Add these Stack theme settings
+# Basic configuration
+markup:
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 1
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Main parameters
 params:
     mainSections:
-        - posts    # This tells the theme to show posts on homepage
-    featuredImageField: image
-    rssFullContent: true
+        - posts
     
     sidebar:
-        compact: false
         emoji: 🪷
-        subtitle: Welcome to my playground
+        subtitle: Welcome to my blog
         avatar:
             enabled: true
             local: false
             src: "/img/avatar.png"
-            width: 128
-            height: 128
-            shape: circle
-
+    
+    # Article settings
     article:
         toc: true
         readingTime: true
-
-    footer:
-        since: 2024
-        customText: ""
-
+    
+    # Add widgets configuration
     widgets:
         homepage:
             - type: search
             - type: archives
             - type: categories
             - type: tag-cloud
+        
+        page:
+            - type: toc    # This enables TOC widget on post pages
+
+    # Footer
+    footer:
+        since: 2024

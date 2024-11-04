@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Peggy&#39;s playground</title>
+        <title>Peggy&#39;s hugo website</title>
         <link>http://localhost:1313/</link>
-        <description>Recent content on Peggy&#39;s playground</description>
+        <description>Recent content on Peggy&#39;s hugo website</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Tue, 19 Mar 2024 13:24:54 -0500</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -12,16 +12,101 @@
         <pubDate>Tue, 19 Mar 2024 13:24:54 -0500</pubDate>
         
         <guid>http://localhost:1313/posts/first/first/</guid>
-        <description>&lt;p&gt;This is my first blog post!&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>First</title>
-        <link>http://localhost:1313/posts/first/</link>
-        <pubDate>Tue, 19 Mar 2024 13:24:54 -0500</pubDate>
-        
-        <guid>http://localhost:1313/posts/first/</guid>
-        <description>&lt;p&gt;This is my first blog post!&lt;/p&gt;
+        <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h1&gt;&lt;p&gt;This is my first blog post!&lt;/p&gt;
+&lt;h2 id=&#34;about-me&#34;&gt;About Me
+&lt;/h2&gt;&lt;p&gt;Here&amp;rsquo;s where I can introduce myself in detail.&lt;/p&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background
+&lt;/h3&gt;&lt;p&gt;My background information goes here.&lt;/p&gt;
+&lt;h3 id=&#34;interests&#34;&gt;Interests
+&lt;/h3&gt;&lt;p&gt;My interests include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Interest 1&lt;/li&gt;
+&lt;li&gt;Interest 2&lt;/li&gt;
+&lt;li&gt;Interest 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-ill-write-about&#34;&gt;What I&amp;rsquo;ll Write About
+&lt;/h2&gt;&lt;p&gt;I plan to write about several topics:&lt;/p&gt;
+&lt;h3 id=&#34;technical-topics&#34;&gt;Technical Topics
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Programming&lt;/li&gt;
+&lt;li&gt;Web Development&lt;/li&gt;
+&lt;li&gt;Data Science&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;other-topics&#34;&gt;Other Topics
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h2&gt;&lt;p&gt;Thanks for reading my first post!&lt;/p&gt;
+&lt;h3 id=&#34;adding-another&#34;&gt;adding another
+&lt;/h3&gt;&lt;p&gt;x
+xxxxxxx
+xxxxxxxxxxx
+xxxxxxxxxx&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Learning journey&lt;/li&gt;
+&lt;li&gt;Future plans&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         

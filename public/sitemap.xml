@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/first/first/</loc>
+    <loc>http://localhost:1313/categories/blog/</loc>
     <lastmod>2024-03-19T13:24:54-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -11,10 +11,7 @@
     <loc>http://localhost:1313/tags/first/</loc>
     <lastmod>2024-03-19T13:24:54-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/first/</loc>
-    <lastmod>2024-03-19T13:24:54-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/general/</loc>
+    <loc>http://localhost:1313/posts/first/first/</loc>
     <lastmod>2024-03-19T13:24:54-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
