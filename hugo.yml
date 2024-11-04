@@ -1,6 +1,6 @@
 baseURL: "http://localhost:1313/"
 languageCode: en-us
-title: Peggy's hugo website
+title: Peggy's playground
 theme: hugo-theme-stack
 
 # Basic configuration
