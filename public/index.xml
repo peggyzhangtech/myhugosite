@@ -63,100 +63,59 @@
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;But how does Spotify recommend music (50 millions+ tracks, 1 million+ podcasts) to users? Why is the recommendation system so important to Spotify? How do companies like Spotify figure out if its recommendation system is working well or not? What are the key metrics they look at when evaluating recommendation performance?&lt;/p&gt;
-&lt;h1 id=&#34;how-does-spotify-recommend-music-to-users&#34;&gt;How does Spotify recommend music to users?
-&lt;/h1&gt;&lt;p&gt;The “Discovery Weekly” algorithms look at two fundamental pieces of information. First, it looks at what are the songs that you have listened to and liked or added to your playlists; Second, it looks at the songs in other people’s playlists. They leverage these two basic pieces of information and decide what songs to recommend to a specific user. For example, if someone has 5 songs in one of their playlists and you have 4 of them in your library, then chances are you are also going to like the fifth song that’s in their playlist. And that song will therefore appear in your “Discovery Weekly”.&lt;/p&gt;
-&lt;h3 id=&#34;background-1&#34;&gt;Background
-&lt;/h3&gt;&lt;p&gt;My background information goes here.&lt;/p&gt;
-&lt;h3 id=&#34;interests&#34;&gt;Interests
-&lt;/h3&gt;&lt;p&gt;My interests include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Interest 1&lt;/li&gt;
-&lt;li&gt;Interest 2&lt;/li&gt;
-&lt;li&gt;Interest 3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;what-ill-write-about&#34;&gt;What I&amp;rsquo;ll Write About
-&lt;/h2&gt;&lt;p&gt;I plan to write about several topics:&lt;/p&gt;
-&lt;h3 id=&#34;technical-topics&#34;&gt;Technical Topics
+&lt;h1 id=&#34;deep-dive&#34;&gt;Deep-dive
+&lt;/h1&gt;&lt;h2 id=&#34;how-does-spotify-recommend-music-to-users&#34;&gt;How does Spotify recommend music to users?
+&lt;/h2&gt;&lt;p&gt;The “Discovery Weekly” algorithms look at two fundamental pieces of information. First, it looks at what are the songs that you have listened to and liked or added to your playlists; Second, it looks at the songs in other people’s playlists. They leverage these two basic pieces of information and decide what songs to recommend to a specific user. For example, if someone has 5 songs in one of their playlists and you have 4 of them in your library, then chances are you are also going to like the fifth song that’s in their playlist. And that song will therefore appear in your “Discovery Weekly”.&lt;/p&gt;
+&lt;figure style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/img/sc2.png&#34; alt=&#34;Screenshot&#34; style=&#34;width: 40%; max-width: 700px;&#34;&gt;
+  &lt;figcaption&gt;Source: https://qz.com/571007/the-magic-that-makes-spotifys-discover-weekly-playlists-so-damn-good
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;This technique is called “Collaborative Filtering”, which is widely applicable to other services as well. For example, Amazon uses this technique to recommend items by looking at your purchase history and that of others. Netflix uses this to recommend shows and movies based on your watch history and other people’s watch history. Other examples include Youtube’s video recommendations, Facebook’s friend suggestions, Uber Eats’ restaurant suggestions, etc. And the algorithm works even better when there is a large user base as collaborative filtering gets more useful when there are more users. However, it is worth noting that with more users and data, it will require more computing power and storage, which can be a big scalability challenge as their user base grows.&lt;/p&gt;
+&lt;p&gt;One interesting assumption embedded in this technique is that people’s playlists are all connected in some way. A visual representation could be a huge network of millions of dots with each dot representing a playlist. Some playlists connect to a lot of other playlists and some only connect to 20 other playlists or less. But no matter how eccentric and unique a musician is, Spotify can still find ways to connect them to the right audience that likes their style of music.&lt;/p&gt;
+&lt;p&gt;To really resonate with users like a good friend, Spotify uses a second method called “taste profile” to recommend songs to its users. They profile the users’ music tastes, based on their listening behavior and habits, by generating and grouping clusters of artists, genres, and micro-genres — not just as broad as “pop” or “jazz” but as fine-grained as “synthpop”, “southern souls”, and “New Americana”.&lt;/p&gt;
+&lt;h2 id=&#34;strategic-analysis&#34;&gt;Strategic Analysis
+&lt;/h2&gt;&lt;h3 id=&#34;1-spotifys-mission&#34;&gt;1. Spotify&amp;rsquo;s mission
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;Unlock the potential of human creativity – by giving a million creative artists the opportunity to live off their art and billions of fans the opportunity to enjoy and be inspired by it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;2-spotifys-market-share&#34;&gt;2. Spotify&amp;rsquo;s market share
+&lt;/h3&gt;&lt;p&gt;According to &lt;a class=&#34;link&#34; href=&#34;https://www.statista.com/statistics/653926/music-streaming-service-subscriber-share/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Statista&lt;/a&gt;, a global business data platform, Spotify has about 30% of the market share worldwide in the music streaming industry, the most out of all music providers.&lt;/p&gt;
+&lt;figure style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;http://localhost:1313/img/sc3.png&#34; alt=&#34;Screenshot&#34; style=&#34;width: 60%; max-width: 700px;&#34;&gt;
+  &lt;figcaption&gt;Share of music streaming subscribers worldwide in the 1st quarter of 2020, by company. Source: Statista
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3 id=&#34;3-spotifys-competitors&#34;&gt;3. Spotify’s competitors
+&lt;/h3&gt;&lt;p&gt;Competitors include Apple, Amazon, Google (YouTube), Pandora, etc.&lt;/p&gt;
+&lt;h3 id=&#34;4-spotifys-users&#34;&gt;4. Spotify’s users
+&lt;/h3&gt;&lt;p&gt;At the time of writing, around 30% of listeners are Millennials, with 25% being Gen Z. Interestingly, 19% of users are above the age of 55.&lt;/p&gt;
+&lt;p&gt;As of March 2020, Spotify offers 4 billion playlists for users to listen to in 79 countries and has 286 million monthly active users (MAU), including 113 million Premium subscribers.&lt;/p&gt;
+&lt;p&gt;As of March 2020, Spotify has more than 50 million tracks, 1 million podcasts, and 4 billion playlists.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A large user base and a large content library are crucial for Spotify to carve out a niche and differentiate itself from its competitors.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-spotifys-financials&#34;&gt;5. Spotify’s financials
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Programming&lt;/li&gt;
-&lt;li&gt;Web Development&lt;/li&gt;
-&lt;li&gt;Data Science&lt;/li&gt;
+&lt;li&gt;Revenue 2019: ~$6.76 billion with Premium subscribers accounted for about 90% of its revenue.&lt;/li&gt;
+&lt;li&gt;Business model: 30-day free trial, Ad-based free tier, premium plans (regular, family, student); with some plans, it is bundled up with other companies/services such as Hulu subscription in the student plan.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;other-topics&#34;&gt;Other Topics
+&lt;h3 id=&#34;6-new-features&#34;&gt;6. New features
 &lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://techcrunch.com/2021/08/31/spotify-officially-launches-blend-allowing-friends-to-match-their-musical-tastes-and-make-playlists-together/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Blend&lt;/a&gt;, September 2021&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://newsroom.spotify.com/2020-04-21/spotifys-new-podcast-playlists-will-help-you-discover-your-next-obsession/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Podcast Playlists&lt;/a&gt;, June 2020&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://newsroom.spotify.com/2020-03-31/spotify-kids-is-now-available-in-the-u-s-canada-and-france/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Spotify Kids&lt;/a&gt;, March 2020&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
-&lt;/h2&gt;&lt;p&gt;Thanks for reading my first post!&lt;/p&gt;
-&lt;h3 id=&#34;adding-another&#34;&gt;adding another
-&lt;/h3&gt;&lt;p&gt;x
-xxxxxxx
-xxxxxxxxxxx
-xxxxxxxxxx&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Learning journey&lt;/li&gt;
-&lt;li&gt;Future plans&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;h2 id=&#34;the-value-of-personalization-and-recommendations&#34;&gt;The value of personalization and recommendations
+&lt;/h2&gt;&lt;h3 id=&#34;why-is-spotify-investing-so-much-time-and-money-in-bettering-its-recommendation-system&#34;&gt;Why is Spotify investing so much time and money in bettering its recommendation system?
+&lt;/h3&gt;&lt;p&gt;The first reason is that it differentiates Spotify from its competitors such as Apple Music and YouTube music. It is widely considered that Spotify’s recommendation system is better than Apple Music’s. The truth is, in all content businesses, music content or movie assets, content is a commodity. Any song sounds more or less the same on all these platforms. And anyone with enough money can buy the licenses and build their own library of content. Therefore, Spotify needs to carve out a niche to differentiate itself from competitors—building the best recommendation system.&lt;/p&gt;
+&lt;p&gt;I will assume this is also similar for video streaming businesses but I am also aware that different video streaming services such as Netflix are investing a lot of money to provide the best video streaming quality (e.g. 4K vs. 1080p) while reducing buffer time and in-app response time. So maybe in this sense, it is slightly different than the music streaming world. But nonetheless, it is still 100% true that content is a commodity.&lt;/p&gt;
+&lt;p&gt;The second reason is that the performance of the recommendation system will directly impact user retention. A good recommendation makes users more likely to continue with the service. And the more a user uses Spotify, the more the app understands the user, and the better the recommendation will get. Also, keep in mind that any personal data that a user puts into an app raises the “switching cost” since the user will have to input that data into other apps. On that front, one common challenge for any recommendation system is the “cold start”, meaning that it is always hard to provide the right recommendation at the beginning for a new user as there isn’t enough data about this user for the system to give an effective recommendation.&lt;/p&gt;
+&lt;p&gt;In conclusion, investing in personalization and recommendations is great for both listeners and the company — a savvy business move as it helps differentiate itself from its competitors as well as effectively retains users.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-the-key-metrics-spotify-looks-at-when-evaluating-recommendation-performance&#34;&gt;What are the key metrics Spotify looks at when evaluating recommendation performance?
+&lt;/h2&gt;</description>
         </item>
         <item>
         <title>Archives</title>
