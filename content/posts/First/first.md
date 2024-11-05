@@ -21,11 +21,17 @@ In 2015, Spotify launched its very first “Discover Weekly” playlists to its 
 Nowadays, we can see a few more playlists or collections uniquely curated for each user, such as “Trending genres for you”, “Uniquely yours” (collection), “Based on your recent listening”, “More Like [Artist Name]”, and “More of what you like”. Its recommendation system covers not only music but podcasts as well, such as a curated list of “Shows you might like”. At the time of writing, my Spotify homepage has 21 “component positions” vertically, and 8 of them directly indicate music recommendations, such as “More Like [Artist Name]”. And for the rest, nearly all 13 of them have embedded some sort of recommending mechanism into the collections in their positions with the exception of “The state of music today”, which I assume is intended to introduce users to new genres and music, with which the users might discover new music tastes either similar to or unlike what they were used to before.
 
 
-This is my first blog post!
+<figure style="text-align: center;">
+  <img src="/img/sc1.png" alt="Screenshot" style="width: 40%; max-width: 700px;">
+  <figcaption>Component positions on my Spotify Homepage on my iOS device at the time of writing.
+</figcaption>
+</figure>
 
-## About Me
+But how does Spotify recommend music (50 millions+ tracks, 1 million+ podcasts) to users? Why is the recommendation system so important to Spotify? How do companies like Spotify figure out if its recommendation system is working well or not? What are the key metrics they look at when evaluating recommendation performance?
 
-Here's where I can introduce myself in detail.
+# How does Spotify recommend music to users?
+
+The “Discovery Weekly” algorithms look at two fundamental pieces of information. First, it looks at what are the songs that you have listened to and liked or added to your playlists; Second, it looks at the songs in other people’s playlists. They leverage these two basic pieces of information and decide what songs to recommend to a specific user. For example, if someone has 5 songs in one of their playlists and you have 4 of them in your library, then chances are you are also going to like the fifth song that’s in their playlist. And that song will therefore appear in your “Discovery Weekly”.
 
 ### Background
 My background information goes here.

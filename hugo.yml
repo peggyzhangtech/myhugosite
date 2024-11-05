@@ -1,19 +1,22 @@
 baseURL: "http://localhost:1313/"
 languageCode: en-us
-title: Peggy's playground
+title: Peggy Zhang
 theme: hugo-theme-stack
 
-# Basic configuration
-markup:
-  tableOfContents:
-    endLevel: 3
-    ordered: false
-    startLevel: 1
-  goldmark:
-    renderer:
-      unsafe: true
 
-# Add menu configuration
+
+# Add markup configuration to include level 1 headings
+# Add Goldmark configuration to allow HTML
+markup:
+    goldmark:
+        renderer:
+            unsafe: true    # This allows HTML in markdown
+    tableOfContents:
+        startLevel: 1
+        endLevel: 3
+        ordered: false
+
+# Simplified menu with just Home and About
 menu:
     main:
         - identifier: home
@@ -30,25 +33,22 @@ menu:
           params:
               icon: user
 
-# Main parameters
 params:
     mainSections:
         - posts
     
     sidebar:
         emoji: 🪷
-        subtitle: Welcome to my blog
+        subtitle: Welcome to my playground.
         avatar:
             enabled: true
             local: false
             src: "/img/avatar.png"
     
-    # Article settings
     article:
         toc: true
         readingTime: true
-    
-    # Add widgets configuration
+
     widgets:
         homepage:
             - type: search
@@ -57,8 +57,4 @@ params:
             - type: tag-cloud
         
         page:
-            - type: toc    # This enables TOC widget on post pages
-
-    # Footer
-    footer:
-        since: 2024
+            - type: toc

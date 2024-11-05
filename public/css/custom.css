@@ -1,0 +1,26 @@
+:root {
+    /* Helvetica font stack */
+    --base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --code-font-family: Monaco, "SF Mono", SFMono-Regular, Consolas, monospace;
+}
+
+/* Main content text */
+.article-content {
+    font-family: var(--base-font-family);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--base-font-family);
+    font-weight: 500;
+}
+
+/* Menu and sidebar text */
+.menu, .sidebar {
+    font-family: var(--base-font-family);
+} 

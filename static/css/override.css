@@ -1,0 +1,21 @@
+/* Disable font loading */
+@font-face {
+    font-family: 'Lato';
+    src: local("Helvetica Neue");
+    font-display: swap;
+}
+
+/* Force Helvetica everywhere */
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* Specific overrides for different elements */
+body,
+.article-content,
+.article-title,
+.menu-item-name,
+.sidebar-title,
+.widget-title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+} 
